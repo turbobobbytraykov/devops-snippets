@@ -1,0 +1,6 @@
+  steps:
+  - checkout: self
+  - script: |
+      git fetch --all
+      git checkout <branch name/tag name/commit hash>
+    workingDirectory: $(Build.SourcesDirectory)
